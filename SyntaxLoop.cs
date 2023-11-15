@@ -106,3 +106,48 @@ namespace Loop {
 When we run the program, the output will be:
 
 Sum = 44
+
+
+Nested Loop:
+
+
+    A for loop inside another for loop is called nested for loop.
+
+For example:
+
+for (int i=0; i<5; i++)
+{
+	// body of outer for loop
+	for (int j=0; j<5; j++)
+	{
+		// body of inner for loop
+	}
+	// body of outer for loop
+}
+Example 1: Nested for Loop
+using System;
+
+namespace Loop
+{
+	class NestedForLoop
+	{
+		public static void Main(string[] args)
+		{
+			int outerLoop = 0, innerLoop = 0;
+			for (int i=1; i<=5; i++)
+			{
+				outerLoop ++;
+				for (int j=1; j<=5; j++)
+				{
+					innerLoop++;
+				}
+			}
+			Console.WriteLine("Outer Loop runs {0} times", outerLoop);
+			Console.WriteLine("Inner Loop runs {0} times", innerLoop);
+		}
+	}
+}
+When we run the program, the output will be:
+
+Outer Loop runs 5 times
+Inner Loop runs 25 times
